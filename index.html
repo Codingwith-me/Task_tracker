@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer, Stopwatch, and Clock</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>QUICK TRACK</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="analytics.html">Analytics</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="clock">
+        <h2>Clock</h2>
+        <div id="current-time"></div>
+      </section>
+
+      <section id="timer">
+        <h2>Timer</h2>
+        <input type="number" id="timer-hours" placeholder="Hours" min="0" />
+        <input type="number" id="timer-minutes" placeholder="Minutes" min="0" />
+        <input type="number" id="timer-seconds" placeholder="Seconds" min="0" />
+        <button id="start-timer">Start/Resume</button>
+        <button id="pause-timer">Pause</button>
+        <button id="stop-timer">Stop</button>
+        <div id="timer-display">00:00:00</div>
+      </section>
+
+      <section id="stopwatch">
+        <h2>Stopwatch</h2>
+        <select id="stopwatch-label">
+          <option value="Work">Work</option>
+          <option value="Exercise">Exercise</option>
+          <option value="Leisure">Leisure</option>
+          <option value="Sleep">Sleep</option>
+          <option value="Others">Others</option>
+        </select>
+        <button id="start-stopwatch">Start</button>
+        <button id="stop-stopwatch">Stop</button>
+        <button id="reset-stopwatch">Reset</button>
+        <div id="stopwatch-display">00:00:00</div>
+      </section>
+
+      <section id="logs">
+        <div class="logs-controls">
+          <h2>Activity Logs</h2>
+          <button id="clear-logs">Clear Activity Log</button>
+        </div>
+        <ul id="logs-list"></ul>
+      </section>
+    </main>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
